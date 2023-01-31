@@ -14,6 +14,7 @@
     font-family: "Archivo";
     list-style: none;
     margin: 0;
+    box-sizing: border-box;
 }
 
 a{
@@ -40,8 +41,6 @@ body{
 
 .linkButton{
     padding: min(10px, 2vw);
-    /* border: 1px solid var(--main-light); */
-    /* border-radius: 3px; */
 }
 
 /* Header */
@@ -60,6 +59,45 @@ header nav li{
     margin-left: 25px;
 }
 
+#menuToggle{
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+    
+    #menuToggle{
+        display: block;
+        text-align: right;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 350;        
+    }
+    #menuToggle:visited{
+        text-decoration: none;
+    }
+    header nav ul{
+        display: none;
+        position: absolute;        
+        width: 100%;
+        height: 100%;
+        transform: translate(-30px); 
+        background-color: var(--main-light);        
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    header nav ul.active{
+        display: block;
+    }
+    header nav li{
+        display: block;
+        margin: 0;
+        margin-bottom: 13px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+}
+
 /* Showcase */
 
 #showcase{
@@ -68,12 +106,25 @@ header nav li{
     color: var(--main-dark);
 }
 
+@media only screen and (max-width: 480px) {
+    #showcase{
+        display: block;
+    }
+    #showcaseText{
+        margin-bottom: min(50px, 5vw);
+    }
+    #showcaseImage{
+        margin-bottom: min(50px, 5vw);
+    }
+}
+
 #showcaseText{
-    flex: 1;
+    flex: 2;
 }
 
 #showcaseImage{
-    flex: 2;
+    flex: 3;
+    background-color: var(--main-dark);
 }
 
 #showcaseText h1{
@@ -88,6 +139,7 @@ header nav li{
 
 #showcaseImage img{
     width: 100%;
+    display: block;
 }
 
 /* Projects */
@@ -110,7 +162,7 @@ header nav li{
 }
 
 #projects ul li{
-    font-size: max(48px, 4vw);
+    font-size: max(40px, 4vw);
     font-weight: 250;
     margin-bottom: max(35px, 5vh);
     letter-spacing: 0.3rem;
