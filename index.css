@@ -1,0 +1,133 @@
+/* Common */
+
+:root{
+    --main-light: #FCFBF8;
+    --main-dark: #242321;
+}
+
+@font-face {
+    font-family: "Archivo";
+    src: url(./Assets/Fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
+*{
+    font-family: "Archivo";
+    list-style: none;
+    margin: 0;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul{
+    padding-left: 0;
+}
+
+body{
+    background-color: var(--main-light);
+}
+
+.container{
+    padding-left: max(30px,3vw);
+    padding-right: max(30px,3vw);
+}
+
+.linkButton{
+    padding: min(10px, 2vw);
+    /* border: 1px solid var(--main-light); */
+    /* border-radius: 3px; */
+}
+
+/* Header */
+header{
+    color: var(--main-dark);
+}
+
+header nav ul{    
+    padding-top: max(15px,8vh);
+    padding-bottom: max(15px,8vh);
+    text-align: right;
+}
+
+header nav li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Showcase */
+
+#showcase{
+    display: flex;
+    gap: min(50px, 5vw);
+    color: var(--main-dark);
+}
+
+#showcaseText{
+    flex: 1;
+}
+
+#showcaseImage{
+    flex: 2;
+}
+
+#showcaseText h1{
+    font-size: 72px;
+    font-weight: 250;
+    margin-bottom: 10px;
+}
+
+#showcaseText p{
+    font-size: 18px;
+}
+
+#showcaseImage img{
+    width: 100%;
+}
+
+/* Projects */
+
+#projects{
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    padding-top: max(15px,8vh);
+    padding-bottom: max(15px,8vh);
+}
+
+#projects h3{
+    font-size: max(28px, 2.5vw);
+    font-weight: 200;
+    margin-bottom: max(60px, 10vh);
+}
+
+#projects ul{
+    padding-left: max(20px, 2vw);
+}
+
+#projects ul li{
+    font-size: max(48px, 4vw);
+    font-weight: 250;
+    margin-bottom: max(35px, 5vh);
+    letter-spacing: 0.3rem;
+}
+
+#projects ul li a{
+    text-decoration-color: greenyellow;
+    text-decoration-thickness: 5%;
+    text-decoration-skip: 3px;
+}
+
+#projects .linkButton{
+    display: block;
+    margin-top: max(80px, 10vh);
+    font-size: max(20px, 2vw);
+    font-weight: 150;    
+}
+
+/* Testimony */
+
