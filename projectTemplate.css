@@ -1,0 +1,39 @@
+.projectHeader{
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    min-height: 60vh;
+}
+
+.projectHeader a{
+    font-weight: 250;
+}
+
+.textContainer{
+    max-width: 740px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.textContainer p{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120%;    
+    margin-top: 20px;
+    margin-bottom: 30px;    
+}
+
+.techDescription{
+    border-left: 5px solid limegreen;
+    padding-left: 10px;
+}
+
+
+.techDescription li{
+    margin-bottom: 3px;
+}

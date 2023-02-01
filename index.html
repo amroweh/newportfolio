@@ -14,9 +14,9 @@
         <nav>
             <a id="menuToggle">menu &#8594;</a>             
             <ul id="navigationMenu">
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>                
+                <li><a href="#">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>                
             </ul>
         </nav>
     </header>
@@ -33,11 +33,32 @@
     <section id="projects" class="container">        
         <h3>Selected Projects</h3>        
         <ul>
-            <li><a href="">ISWA Lebanon Website.</a></li>
-            <li><a href="">Force-Directed Network Graph.</a></li>
-            <li><a href="">Ingredient Swap.</a></li>            
+            <li><a href="projectTemplate.html">ISWA Lebanon Website.</a></li>
+            <li><a href="projectTemplate.html">Force-Directed Network Graph.</a></li>
+            <li><a href="projectTemplate.html">Ingredient Swap.</a></li>            
         </ul>
         <a class="linkButton" href="">View All Projects &#8594</a>
+    </section>
+    <section id="testimony" class="container">
+        <div id="testimonyQuote">
+            <h2>&ldquo;Working with Ali and Suvodeep has allowed us to explore possibilities that otherwise wouldn't have made it past the office whiteboard&rdquo;</h2>
+            <h3>Daniel Blaney, CEO of Ferrio</h3>
+        </div>        
+        <div id="testimonyImage">
+            <img src="./Assets/Images/testimonySquare.jpg" alt="">
+        </div>        
+    </section>
+    <section id="contact" class="container">
+        <h1>Contact Me.</h1>
+        <form action="">
+            <label for="">Name</label>
+            <input type="text"><br>
+            <label for="">Email</label>
+            <input type="email"><br>
+            <label for="">Message</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>        
+            <button class="btn" type="submit">Send &#8594;</button>    
+        </form>
     </section>
 </body>
 </html>

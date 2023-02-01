@@ -43,6 +43,41 @@ body{
     padding: min(10px, 2vw);
 }
 
+.btn{
+    all: unset;
+    cursor: pointer;
+    padding: min(10px, 2vw);
+    background-color: transparent;
+    color: var(--main-light);
+    border: none;
+    display: inline;
+    margin-top: max(20px, 5vh);
+    font-size: max(16px, 1.5vw);
+    font-weight: 200;
+}
+
+.btn:hover{
+    text-decoration: underline;
+    text-decoration-color: greenyellow;
+    text-decoration-thickness: 10%;
+}
+
+h1{
+    font-size: 72px;
+    font-weight: 250;
+    margin-bottom: 10px;
+}
+h2{    
+    font-size: 60px;
+    font-weight: 250;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 200;    
+    margin-bottom: 10px;
+}
+
 /* Header */
 header{
     color: var(--main-dark);
@@ -106,12 +141,13 @@ header nav li{
     color: var(--main-dark);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     #showcase{
         display: block;
     }
     #showcaseText{
-        margin-bottom: min(50px, 5vw);
+        margin: 0;
+        margin-bottom: min(50px, 5vw);        
     }
     #showcaseImage{
         margin-bottom: min(50px, 5vw);
@@ -120,18 +156,13 @@ header nav li{
 
 #showcaseText{
     flex: 2;
+    margin-top: 40px;
 }
 
 #showcaseImage{
     flex: 3;
-    background-color: var(--main-dark);
 }
 
-#showcaseText h1{
-    font-size: 72px;
-    font-weight: 250;
-    margin-bottom: 10px;
-}
 
 #showcaseText p{
     font-size: 18px;
@@ -183,3 +214,74 @@ header nav li{
 
 /* Testimony */
 
+#testimony{
+    background-image: url(./Assets/Images/testimonyPic.jpg), linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9));
+    background-blend-mode: overlay;    
+    object-fit: fill;
+    display: flex;
+    align-items: center;
+}
+
+#testimonyImage{
+    flex: 2;
+}
+
+#testimony img{
+    padding: 80px 40px;
+    width: 100%;
+}
+
+#testimonyQuote{
+    flex: 3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+#testimonyQuote h3{
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* Contact */
+#contact{
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    text-align: center;  
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form{
+    display: block;
+    width: 600px;
+}
+
+@media only screen and (max-width: 620px){
+    #contact form{
+        width: 100%;
+    }
+}
+
+#contact form label{
+    font-weight: 250;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#contact h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#contact form input, #contact form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+}
