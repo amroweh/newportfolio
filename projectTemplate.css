@@ -33,7 +33,21 @@
     padding-left: 10px;
 }
 
-
 .techDescription li{
     margin-bottom: 3px;
+}
+
+.textContainer i{
+    display: block;
+    margin-top: 50px;    
+}
+
+.textContainer .inTextLink{
+    text-decoration: underline;
+    text-decoration-color: limegreen;
+}
+
+.textContainer .inTextLink:hover{
+    background-color: limegreen;
+    color: var(--main-light);
 }

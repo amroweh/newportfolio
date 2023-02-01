@@ -43,6 +43,10 @@ body{
     padding: min(10px, 2vw);
 }
 
+.green{
+    color: limegreen;
+}
+
 .btn{
     all: unset;
     cursor: pointer;
