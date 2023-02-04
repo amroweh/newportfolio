@@ -1,0 +1,38 @@
+/* Projects */
+
+#projects{
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    padding-top: max(15px,8vh);
+    padding-bottom: max(15px,8vh);
+}
+
+#projects h3{
+    font-size: max(28px, 2.5vw);
+    font-weight: 200;
+    margin-bottom: max(60px, 10vh);
+}
+
+#projects ul{
+    padding-left: max(20px, 2vw);
+}
+
+#projects ul li{
+    font-size: max(40px, 4vw);
+    font-weight: 250;
+    margin-bottom: max(35px, 5vh);
+    letter-spacing: 0.3rem;
+}
+
+#projects ul li a{
+    text-decoration-color: greenyellow;
+    text-decoration-thickness: 5%;
+    text-decoration-skip: 3px;
+}
+
+#projects .linkButton{
+    display: block;
+    margin-top: max(80px, 10vh);
+    font-size: max(20px, 2vw);
+    font-weight: 150;    
+}

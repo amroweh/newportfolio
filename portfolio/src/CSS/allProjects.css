@@ -1,0 +1,28 @@
+.allProjectsHeader{
+    background-color: var(--main-light);
+    color: var(--main-dark);
+}
+
+#allProjects{
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    padding-top: max(15px,8vh);
+    padding-bottom: max(15px,8vh);
+}
+
+#allProjects ul{
+    padding-left: max(20px, 2vw);
+}
+
+#allProjects ul li{
+    font-size: max(40px, 4vw);
+    font-weight: 250;
+    margin-bottom: max(35px, 5vh);
+    letter-spacing: 0.3rem;
+}
+
+#allProjects ul li a{
+    text-decoration-color: greenyellow;
+    text-decoration-thickness: 5%;
+    text-decoration-skip: 3px;
+}

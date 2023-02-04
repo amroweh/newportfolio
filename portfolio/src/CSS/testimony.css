@@ -1,0 +1,29 @@
+/* Testimony */
+
+#testimony{
+    background-image: url(../Assets/Images/testimonyPic.jpg), linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9));
+    background-blend-mode: overlay;    
+    background-size: cover;    
+    display: flex;
+    align-items: center;
+}
+
+#testimonyImage{
+    flex: 2;
+}
+
+#testimony img{
+    padding: 80px 40px;
+    width: 100%;
+}
+
+#testimonyQuote{
+    flex: 3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#testimonyQuote h3{
+    text-align: left;
+    margin-top: 30px;
+}

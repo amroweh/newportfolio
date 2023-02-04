@@ -1,0 +1,83 @@
+/* Common */
+
+:root{
+    --main-light: #FCFBF8;
+    --main-dark: #242321;
+}
+
+@font-face {
+    font-family: "Archivo";    
+    src: url(../Assets/Fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
+*{
+    font-family: "Archivo";
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul{
+    padding-left: 0;
+}
+
+body{
+    background-color: var(--main-light);
+}
+
+.container{
+    padding-left: max(30px,3vw);
+    padding-right: max(30px,3vw);
+}
+
+.linkButton{
+    padding: min(10px, 2vw);
+}
+
+.green{
+    color: limegreen;
+}
+
+.btn{
+    all: unset;
+    cursor: pointer;
+    padding: min(10px, 2vw);
+    background-color: transparent;
+    color: var(--main-light);
+    border: none;
+    display: inline;
+    margin-top: max(20px, 5vh);
+    font-size: max(16px, 1.5vw);
+    font-weight: 200;
+}
+
+.btn:hover{
+    text-decoration: underline;
+    text-decoration-color: greenyellow;
+    text-decoration-thickness: 10%;
+}
+
+h1{
+    font-size: 72px;
+    font-weight: 250;
+    margin-bottom: 10px;
+}
+h2{    
+    font-size: 60px;
+    font-weight: 250;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 200;    
+    margin-bottom: 10px;
+}
